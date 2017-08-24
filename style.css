@@ -1,0 +1,331 @@
+.container{
+	position: relative;
+	z-index: 0;
+	max-width: 640px;
+	padding: 0px;
+	background-color: #22202d;
+}
+.container .swiper-container{
+	height: 100%;	
+}
+.swiper-slide{
+	background-color: #22202d;
+}
+.homepage{
+	position: relative;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #22202d;
+}
+.home-container{
+	padding-top: 5%;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/home_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+.home-container .title{
+	width: 100%;
+	height: 5%;
+	background-image: url(img/title.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
+}
+.catoon-position{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-position: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.home-table{
+	background-image: url(img/tv.png);
+	z-index: 3;
+}
+.tv-table{
+	display: table;
+	z-index: 2;
+}
+.tv-table .tv-td{
+	padding-top: 10%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.sailormoon{
+	background-image: url(img/sailor_moon.png);
+	z-index: 1;
+}
+.keroro{
+	background-image: url(img/keroro.png);
+	z-index: 1;
+}
+.front-caton{
+	background-image: url(img/front_caton.png);
+	z-index: 4;
+}
+.powerpuff{
+	background-image: url(img/powerpuff.png);
+	z-index: 4;
+}
+.start{
+	position: absolute;
+	left: 0px;
+	bottom:0px;
+	width: 100%;
+	height: 14%;
+	z-index: 5;
+}
+.start-btn{
+	margin: auto;
+	width: 65%;
+	height: 100%;
+	background-image: url(img/start_btn.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: contain;
+}
+
+
+.level{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+}
+.level-one,
+.level-two,
+.level-three,
+.level-four{
+	z-index: 6;
+}
+.level .subject,.resulit .subject{
+    position: relative;
+    padding: 0px 15px;
+    color: #fff;
+    text-align: center;
+    z-index: 4;
+}
+.level .subject span{
+	margin: auto;
+	padding:4px 8px;
+	display: inline-block;
+	text-align: center;
+}
+.level .subject p{
+	padding-top: 5%;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.level .chiose{
+	position: absolute;
+	left: 0px;
+	bottom: 5%;
+	width: 100%;
+	z-index: 4;
+}
+.level .chiose .row{
+	margin: 0px;
+}
+.level .chiose .row .col-xs-6{
+	margin: 0px;
+	padding: 5px;
+}
+.level .chiose .row .col-xs-6 label{
+	position: relative;
+	padding: 6px;
+	width: 100%;
+	background-color: #563d7c;
+	color: #fff;
+	border-radius: 28px;
+}
+.level .chiose .row .col-xs-6 label input{
+	visibility: hidden;
+}
+.level .chiose .row .col-xs-6 label p{
+	margin-bottom: 0px;
+	padding-left: 25px;
+}
+.level .chiose .row .col-xs-6 label p:first-child{
+	position: absolute;
+	left: 3px;
+	top:3px;
+	display: inline-block;
+	padding: 4px 8px;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #563d7c;
+}
+.tvImg{
+	background-image: url(img/tv.png);
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+}
+.tv-img{
+    margin: auto;
+    width: 72%;
+    height: 35%;
+    background-color: #54badb;
+    border-radius: 18px;
+    background-size: cover;
+    background-position: 95% 25%;
+}
+.serial{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    padding: 0px 6px;
+    width: 20px;
+    display: inline-block;
+    background-color: #fff;
+    color: #563d7c;
+    border-radius: 20px;
+}
+.waitting{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/end.gif);
+	background-position: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#titler{
+	color: #ffd78a;
+}
+#resultr3{
+	margin: auto;
+	width: 95%;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-align: left;
+	background-color: transparent;
+    color: #faebcc;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+#resultr3:before{
+	content: "必杀技：";
+}
+#resultr3 span{
+	font-weight: 700;
+}
+.subject-bottom{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	z-index: 4;s
+}
+.resulit h3{
+	text-align: center;
+}
+.remote{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 12px;
+	background-image: url(img/remote_bg.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0px;
+}
+
+.remote .btn{
+	font-size: 12px;
+	background-color: #aa4451;
+	color: #fff;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding: 6px 24px 3px;
+}
+.remote .btn:first-child{
+	border-right: 2px solid rgba(0,0,0,0.1);
+}
+.share{
+	display: table;
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height: 100%;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.85);
+	text-align: center;
+}
+.share-tips{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-image: url(img/share.png);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+    background-size: 75%;
+}
+.share-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.share-td img{
+	width: 90%;
+}
+.share-bottom{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 20%;
+	z-index: 0;
+	padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+.result-bg{
+	background-image: url(img/tv_result.png);
+	z-index: 3;
+}
+.result-tv-td{
+    padding-bottom: 8%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.iwantplay{
+	height: 10%;
+    background-image: url(img/iwantplay.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+.share-bottom .share-back{
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+    margin:auto;
+    width: 60%;
+    height: 100%;
+    background-image: url(img/back.png);
+}
+.share-bottom .btn {
+    font-size: 12px;
+    background-color: #aa4451;
+    color: #fff;
+    padding: 6px 24px 3px;
+}

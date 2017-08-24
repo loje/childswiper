@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>儿童节</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- swiper 3 -->
+		<link href="swiper/3.3.1/swiper.min.css" rel="stylesheet">
+
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container index-container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-no-swiping slide-result">
+						<div class="waitting"></div>
+						<div class="resulit" style="display:none;">
+							<div class="subject">
+								<h3 id="titler"></h3>
+								<p id="resultr1"></p>
+								<p id="resultr2"></p>
+							</div>
+							<div class="catoon-position result-bg"></div>
+							<div class="catoon-position tv-table">
+								<div class="result-tv-td">
+									<div class="tv-img" id="tv-imgr"></div>
+								</div>
+							</div>
+							<div class="subject-bottom">
+								<div class="alert alert-warning"  id="resultr3"></div>
+								<div class="remote">
+									<button class="btn share-btn">我也要玩</button>
+									<!-- <a href="" class="btn replay-btn">我要重来</a> -->
+								</div>
+							</div>
+						</div>
+						<div class="share" style="display:none;">
+							<div class="share-td">
+								<img class="share-img" src="img/qrcode.png" />
+							</div>
+							<div class="share-bottom">
+								<div class="share-back"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bootstrap/js/jquery.min.2.2.4.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- swiper 3 -->
+		<script src="swiper/3.3.1/swiper.jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".index-container").height($(window).height());
+				$(window).resize(function(){
+					$(".index-container").height($(window).height());
+				})
+				var mySwiper = new Swiper ('.swiper-container', {
+					direction: 'vertical',
+					loop: false,
+					//effect : 'fade',
+					noSwiping : true,
+					nextButton:'.level .chiose .row .col-xs-6 label',
+				});
+				
+				var waitting = setTimeout(function(){
+					$(".waitting").attr("style","display:none;");
+					$(".resulit").removeAttr("style");
+				},1425);
+
+			});
+	
+			/*结果*/
+			function titleResult(){	
+				var tvImgr=document.getElementById("tv-imgr");
+				var Titler=document.getElementById("titler")
+				var Resultr1=document.getElementById("resultr1");
+				var Resultr2=document.getElementById("resultr2");
+				var Resultr3=document.getElementById("resultr3");
+				var Resultr4=document.getElementById("resultr4");
+				var Resultr5=document.getElementById("resultr5");
+				var Resultr6=document.getElementById("resultr6");
+				var Resultr7=document.getElementById("resultr7");
+				var Resultr8=document.getElementById("resultr8");
+				var Resultr9=document.getElementById("resultr9");
+				var Resultr10=document.getElementById("resultr10");
+				//创建行
+				var TitlerArray=new Array();
+				//创建列
+				TitlerArray[0]=new Array();
+				TitlerArray[1]=new Array();
+				TitlerArray[2]=new Array();
+				TitlerArray[3]=new Array();
+				TitlerArray[4]=new Array();
+				TitlerArray[5]=new Array();
+				TitlerArray[6]=new Array();
+				TitlerArray[7]=new Array();
+				TitlerArray[8]=new Array();
+				TitlerArray[9]=new Array();
+				//列举数据
+				TitlerArray[0][0]="img/r1.jpg";
+				TitlerArray[0][1]="孙悟空";
+				TitlerArray[0][2]="《龙珠》";
+				TitlerArray[0][3]="「我肚子饿了……」";
+				TitlerArray[0][4]="<span>龟派气功</span>——由龟仙人所创的绝技，使用时用双手合成花萼状，把花萼手放在腰间，在双手掌心聚出一个光球，然后大喊“龟…派…气…功！”";
+
+				TitlerArray[1][0]="img/r2.jpg";
+				TitlerArray[1][1]="星马豪";
+				TitlerArray[1][2]="《四驱兄弟》";
+				TitlerArray[1][3]="「冲啊，跃动冲锋！」";
+				TitlerArray[1][4]="<span>冲啊，跃动冲锋！</span>——跃动炸弹为跃动冲锋龙卷风落地后再次起跳。（每次只要进入比赛状态小豪的奔跑速度总能跟得上时速达到60km/h的四驱车，并且还能声控四驱车加速)";
+
+				TitlerArray[2][0]="img/r3.jpg";
+				TitlerArray[2][1]="大空翼";
+				TitlerArray[2][2]="《足球小将》";
+				TitlerArray[2][3]="「足球是我的朋友！足球是我的梦想！」";
+				TitlerArray[2][4]="<span>冲力倒挂金钩</span>——在最重要的时刻主角光环一定爆发，在谁都想不到的情况下一定能一记倒挂金钩超远距离射进龙门，然后震惊全场！";
+
+				TitlerArray[3][0]="img/r4.jpg";
+				TitlerArray[3][1]="大娃";
+				TitlerArray[3][2]="《葫芦兄弟》";
+				TitlerArray[3][3]="「妖精！放了我爷爷！」";
+				TitlerArray[3][4]="<span>巨大化</span>——天生神力，无所不能，可以随意变大缩小，可惜有勇无谋。";
+
+				TitlerArray[4][0]="img/r5.jpg";
+				TitlerArray[4][1]="小智";
+				TitlerArray[4][2]="《神奇宝贝》";
+				TitlerArray[4][3]="「就决定是你了！皮卡丘！」";
+				TitlerArray[4][4]="<span>去吧精灵球！</span>——训练师需要抛出球击中野生神奇宝贝，才可以确定目标并收复。球在进行“接收”操作时，球会发出红光包裹神奇宝贝。不同之处在于，收复野生精灵时必须击中它，而收回神奇宝贝时只需让红光照射神奇宝贝即可。";
+
+				TitlerArray[5][0]="img/r6.jpg";
+				TitlerArray[5][1]="月野兔";
+				TitlerArray[5][2]="《美少女战士》";
+				TitlerArray[5][3]="「我要代表月亮，消灭你！」";
+				TitlerArray[5][4]="<span>Moon Tiara Boomerang</span>——变身为水手月亮之后，拿着月之冕，大喊咒语，消灭邪恶的妖魔！";
+
+				TitlerArray[6][0]="img/r7.jpg";
+				TitlerArray[6][1]="哆啦A梦";
+				TitlerArray[6][2]="《哆啦A梦》";
+				TitlerArray[6][3]="「真拿你没办法~」";
+				TitlerArray[6][4]="<span>百宝袋</span>——每当有问题出现，掏一掏百宝袋，你就会发现问题解决了。";
+
+				TitlerArray[7][0]="img/r8.jpg";
+				TitlerArray[7][1]="野原新之助";
+				TitlerArray[7][2]="《蜡笔小新》";
+				TitlerArray[7][3]="「动感超人，啊哈哈哈哈」";
+				TitlerArray[7][4]="<span>摇屁股</span>——脱下裤子撅起小屁屁跳舞，可是每一次都会被妈妈打。";
+
+				TitlerArray[8][0]="img/r9.jpg";
+				TitlerArray[8][1]="奥特曼";
+				TitlerArray[8][2]="《奥特曼》";
+				TitlerArray[8][3]="「为了维护世界和平」";
+				TitlerArray[8][4]="<span>变身</span>——举起神奇的棒子即可在强光过后化身巨人！！每次打完架都会叮咚叮咚！！";
+
+				TitlerArray[9][0]="img/r10.jpg";
+				TitlerArray[9][1]="木之本樱";
+				TitlerArray[9][2]="《百变小樱》";
+				TitlerArray[9][3]="「隐藏着黑暗力量的钥匙啊,在我面前显示你真正的力量！现在以你的主人，小樱之名命令你——封印解除！」";
+				TitlerArray[9][4]="<span>库洛牌</span>——封印着法力及生命的神秘卡牌，通过消耗魔力，发挥不同的能力！";
+
+				var showContentr=parseInt(Math.random()*10);
+				for(var i=0;i<TitlerArray.length;i++){
+					if (i==showContentr) {
+						tvImgr.style.backgroundImage="url("+TitlerArray[i][0]+")";
+						Titler.innerHTML=TitlerArray[i][1];
+						Resultr1.innerHTML=TitlerArray[i][2];
+						Resultr2.innerHTML=TitlerArray[i][3];
+						Resultr3.innerHTML=TitlerArray[i][4];
+					}
+				}
+
+				$(".share-btn").click(function(){
+					$(".share").removeAttr("style");
+				});
+				$(".share-bottom .share-back").click(function(){
+					$(".share").attr("style","display:none;");
+				});
+			}
+			titleResult();
+		</script>
+	</body>
+</html>
